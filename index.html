@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TenTwenty Exam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="Container">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a class="close" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 -960 960 960" width="22"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Make Enquiry</a></li>
+            </ul>
+            <ul class="desktop">
+                <li><a class="hideOnMobile" href="#">About</a></li>
+                <li><a class="hideOnMobile" href="#">News</a></li>
+                <li><a class="hideOnMobile" href="#">Services</a></li>
+                <li><a class="hideOnMobile" href="#">Our Team</a></li>
+                <li><a class="hideOnMobile" href="#">Make Enquiry</a></li>
+                <li class="contact"><a href="#">Contact Us</a> <img src="/assets/shape.png" alt="" srcset=""> </li>
+                <li class="burger" onclick=showSidebar()> <a href="#"><svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="0.5" x2="22" y2="0.5" stroke="#221F20"/>
+                    <line x1="2" y1="7.5" x2="20" y2="7.5" stroke="#221F20"/>
+                    <line y1="14.5" x2="22" y2="14.5" stroke="#221F20"/>
+                    </svg></a></li>
+            </ul>
+        </nav>
+
+        <div class="copy1container">
+            <div class="copy1subcopy1">
+                <p>Welcome To TenTwenty Farms</p>
+            </div>
+            <div class="copy1subcopy2">
+                <p>From our Farms <br> to your hands</p>
+            </div>
+        </div>
+    
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"  style="display: block;">
+                    <img src="/assets/pexels-tim-mossholder-974314 1.png" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="/assets/nature_landscape_39-wallpaper-1440x900.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="assets/agriculture-farm-land-countryside-aerial-view-green-1920x1200-3985.jpg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="assets/wallpapersden.com_building-grass-nature_1440x900.jpg" alt="Slide 4">
+                </div>
+                <div class="slider-button-container">
+                    <div class="button-slider">
+                        <div class="button-slide">
+                            <img src="/assets/pexels-tim-mossholder-974314 1.png" alt="Slide 1">
+                        </div>
+                        <div class="button-slide" style="display: block;">
+                            <img src="/assets/nature_landscape_39-wallpaper-1440x900.jpg" alt="Slide 2">
+                        </div>
+                        <div class="button-slide">
+                            <img src="assets/agriculture-farm-land-countryside-aerial-view-green-1920x1200-3985.jpg" alt="Slide 3">
+                        </div>
+                        <div class="button-slide">
+                            <img src="assets/wallpapersden.com_building-grass-nature_1440x900.jpg" alt="Slide 4">
+                        </div>
+                            <button class="next-btn">Next</button>
+                        </div>
+                        <div class="outline"></div>
+                        <div class="border-top"></div> 
+                        <div class="border-bottom"></div>
+    
+                        <div class="slidecounter">
+                            <div class="slide-number">01</div>
+                            <div class="verline"></div>
+                            <div class="totalslides">03</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copy2container">
+            <div class="copy2subcopy1">
+                <p>Quality Products</p>
+            </div>
+            <div class="copy2subcopy2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-wrapper">
+                <div class="carousel">
+                    <div class="img">
+                        <img src="/assets/wallpaperflare.com_wallpaper.jpg" alt="" srcset="">
+                            <div class="context">
+                                <p>Client 1</p> 
+                                <span>Dubai, United Arab Emirates</span>
+                            </div>
+                    </div>
+                    <div class="img">
+                        <img src="/assets/pexels-tim-mossholder-974314 1.png" alt="" srcset="">
+                            <div class="context">
+                                <p>Client 2</p> 
+                                <span>Dubai, United Arab Emirates</span>
+                            </div>
+                    </div>
+                    <div class="img">
+                        <img src="/assets/pxfuel.jpg" alt="" srcset="">
+                            <div class="context">
+                                <p>Client 3</p> 
+                                <span>Dubai, United Arab Emirates</span>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

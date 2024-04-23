@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+}
+body{
+  background-color: #FFFCFA;
+}
+.Container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+/* Navigation bar CSS starts here */
+nav{
+  position: absolute;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  width: 97.5%;
+  margin-top: 21px;
+  margin-left: 20px;
+  margin-right: 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+nav ul{
+  position: relative;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav li{
+  padding-left: 0;
+  height: 101px;
+}
+nav .desktop .contact{
+  position: absolute;
+  border: 1px solid #000000;
+  background-color: #FFFCFA;
+  width: 146px;
+  height: 36px;
+  margin-left: auto;
+  right: 33px;
+}
+nav .desktop li:first-child{
+  margin-left: 39px;
+}
+nav .desktop li:first-child a{
+  padding: 0;
+}
+nav .desktop .contact a{
+  margin-left: 16px;
+  padding: 0;
+}
+nav .desktop .contact img{
+  position: relative;
+  top: -25px;
+  left: 108px;
+  height: 14px;
+  width: 18px;
+}
+nav a{
+  height: 100%;
+  padding: 0 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.burger{
+  display: none;
+  width: 48px;
+  height: 48px;
+  background-color: #F9F4EE;
+  margin-left: auto;
+  margin-right: 26px;
+}
+.burger svg{
+  position: relative;
+  left: 3px;
+  width: 22px;
+  height: 14px;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  padding: 0;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  height: 50px;
+  width: 100%;
+}
+.sidebar li:hover{
+background-color: #EEF4F9;
+}
+.close{
+  position: relative;
+  margin-left: 205px;
+}
+/* Copy1 CSS starts here */
+.copy1container{
+  position: absolute;
+  color: #EEF4F9;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  width: 756px;
+  height: 176px;
+  top: 350px;
+  left: 135px;
+  z-index: 1;
+}
+.copy1subcopy2{
+  position: relative;
+  top: 24px;
+  width: auto;
+  height: 128px;
+  font-size: 64px;
+}
+/* Slider CSS starts here */
+.slider-container{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    z-index: 0;
+    overflow: hidden;
+}
+.slider{
+    position: relative;
+}
+.slide{
+  display: none;
+}
+.slide img{
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+}
+.slider-button-container {
+    position: absolute;
+    top: 692px;
+    left: 135px;
+    width: 350px;
+    height: 140px;
+    overflow: hidden;
+  }
+  .button-slider {
+    position: relative;
+    width: 93px;
+    height: 93px;
+    top: 24px;
+    left: 23px;
+    overflow: hidden;
+  }
+  .button-slide {
+    display: none;
+  }
+  .button-slide img {
+    width: 93px;
+    height: 93px;
+  }
+  .next-btn {
+    z-index: 2;
+    border: none;
+    background: none;
+    position: absolute; /* Position the button inside the slider */
+    width: 93px;
+    height: 93px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #EEF4F9;
+  }
+  .next-btn:hover{
+    cursor: pointer;
+  }
+  .outline{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 132px;
+    height: 132px;
+    opacity: .3;
+    border: 1px solid #EEF4F9;
+  }
+  .slidecounter{
+    position: absolute;
+    font-size: 16px;
+    color: #EEF4F9;
+  }
+  .slide-number{
+    position: relative;
+    top: -30px;
+    left: 170px;
+  }
+  .totalslides{
+    position: relative;
+    top: -50px;
+    left: 324px;
+  }
+  .verline{
+    position: relative;
+    top: -40px;
+    left: 205px;
+    height: 1px;
+    width: 103px;
+    background-color: #EEF4F9;
+  }
+  .border-top{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #EEF4F9; /* Red border */
+    border-right: 8px solid #EEF4F9; /* Red border */
+    animation: rotateBorder 5s infinite linear; /* Animation for the border */
+  }
+  .border-bottom{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 210px;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #EEF4F9; /* Red border */
+    border-left: 8px solid #EEF4F9; /* Red border */
+    animation: rotateBorder-bottom 5s infinite linear; /* Animation for the border */
+  }
+  
+  @keyframes rotateBorder {
+    0%   {width: 0; height: 0;}
+    25%  {width: 132px; height: 0;}
+    50%  {width: 132px; height: 132px;}
+    100% {width: 132px; height: 132px;}
+  }
+
+  @keyframes rotateBorder-bottom {
+    0%   {width: 0; height: 0; opacity: 0;}
+    50%  {width: 0; height: 0; opacity: 0;}
+    50.1%{width: 0; height: 0; opacity: 1;}
+    75%  {width: 132px; height: 0px; opacity: 1;}
+    100% {width: 132px; height: 132px; opacity: 1;}
+  }
+
+  /* Copy2 CSS Starts here */
+
+  .copy2container{
+    position: relative;
+    font-size: 56px;
+    font-weight: 400;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 253px;
+    width: 100%;
+    z-index: 1;
+  }
+  .copy2subcopy1{
+    height: 92px;
+    width: 749px;
+    text-align: center;
+  }
+  .copy2subcopy2{
+    margin-top: 30px;
+    height: 111px;
+    width: 748px;
+    font-size: 24px;
+    text-align: center;
+    color: #7A7777;
+  }
+
+  /* Card slider CSS Starts here */
+
+  .gallery-container{
+    position: relative;
+    top: 60px;
+    height: 1000px;
+    width: 100%;
+  }
+  .gallery-wrapper{
+    height: 800px;
+    width: 100%;
+  }
+  .gallery-wrapper .carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .carousel img{
+    height: 620px;
+    width: 435px;
+    object-fit: cover;
+  }
+  .carousel .img:first-child{
+    position: relative;
+    top: 50px;
+    left: -400px;
+    rotate: -9.5deg;
+  }
+  .context{
+    position: relative;
+    font-size: 36px;
+    top: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .context span{
+    font-size: 24px;
+    color: #7A7777;
+    margin-top: 15px;
+  }
+  .carousel .img:first-child .context{
+    display: none;
+  }
+  .carousel .img:last-child{
+    position: relative;
+    top: 50px;
+    left: 400px;
+    rotate: 9.5deg;
+  }
+  .carousel .img:last-child .context{
+    display: none;
+  }
+  
+  @media (max-width: 900px) {
+    .hideOnMobile{
+      display: none;
+    }
+    .burger{
+      display: block;
+    }
+    nav{
+      width: 92%;
+    }
+    .contact{
+      margin-left: 0 !important;
+     left: 27.6px;
+    }
+    .slider-button-container {
+      left: 25px;
+    }
+    .copy1container{
+      top: 260px;
+      left: 25px;
+      width: 341px;
+    }
+    .copy1subcopy2 {
+      font-size: 46px;
+    }
+    .copy2container{
+      margin-top: 83px;
+      width: 312px;
+    }
+    .copy2subcopy1 {
+      width: 312px;
+      font-size: 30px;
+    }
+    .copy2subcopy2 {
+      margin-top: -30px;
+      width: 312px;
+      font-size: 16px;
+    }
+    .carousel .img:first-child{
+      left: -120px;
+    }
+    .carousel .img:last-child{
+      left: 120px;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .carousel .img:first-child{
+      left: -150px;
+    }
+    .carousel .img:last-child{
+      left: 150px;
+    }
+  }
+    
+  
+  
