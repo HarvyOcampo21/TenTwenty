@@ -1,21 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 400;
 }
 body{
   background-color: #FFFCFA;
 }
-.Container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-}
 /* Navigation bar CSS starts here */
 nav{
   position: absolute;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   background-color: #FFFFFF;
   width: 97.5%;
@@ -34,7 +28,6 @@ nav ul{
   align-items: center;
 }
 nav li{
-  padding-left: 0;
   height: 101px;
 }
 nav .desktop .contact{
@@ -45,12 +38,6 @@ nav .desktop .contact{
   height: 36px;
   margin-left: auto;
   right: 33px;
-}
-nav .desktop li:first-child{
-  margin-left: 39px;
-}
-nav .desktop li:first-child a{
-  padding: 0;
 }
 nav .desktop .contact a{
   margin-left: 16px;
@@ -114,6 +101,7 @@ background-color: #EEF4F9;
 /* Copy1 CSS starts here */
 .copy1container{
   position: absolute;
+  font-family: "Work Sans", sans-serif;
   color: #EEF4F9;
   display: flex;
   justify-content: flex-start;
@@ -186,6 +174,8 @@ background-color: #EEF4F9;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     color: #EEF4F9;
   }
@@ -203,6 +193,8 @@ background-color: #EEF4F9;
   }
   .slidecounter{
     position: absolute;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     color: #EEF4F9;
   }
@@ -265,7 +257,8 @@ background-color: #EEF4F9;
   /* Copy2 CSS Starts here */
 
   .copy2container{
-    position: relative;
+    position: absolute;
+    font-family: "Work Sans", sans-serif;
     font-size: 56px;
     font-weight: 400;
     color: #000000;
@@ -292,65 +285,7 @@ background-color: #EEF4F9;
     color: #7A7777;
   }
 
-  /* Card slider CSS Starts here */
-
-  .gallery-container{
-    position: relative;
-    top: 60px;
-    height: 1000px;
-    width: 100%;
-  }
-  .gallery-wrapper{
-    height: 800px;
-    width: 100%;
-  }
-  .gallery-wrapper .carousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 800px;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  .carousel img{
-    height: 620px;
-    width: 435px;
-    object-fit: cover;
-  }
-  .carousel .img:first-child{
-    position: relative;
-    top: 50px;
-    left: -400px;
-    rotate: -9.5deg;
-  }
-  .context{
-    position: relative;
-    font-size: 36px;
-    top: 35px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .context span{
-    font-size: 24px;
-    color: #7A7777;
-    margin-top: 15px;
-  }
-  .carousel .img:first-child .context{
-    display: none;
-  }
-  .carousel .img:last-child{
-    position: relative;
-    top: 50px;
-    left: 400px;
-    rotate: 9.5deg;
-  }
-  .carousel .img:last-child .context{
-    display: none;
-  }
-  
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     .hideOnMobile{
       display: none;
     }
@@ -374,34 +309,6 @@ background-color: #EEF4F9;
     }
     .copy1subcopy2 {
       font-size: 46px;
-    }
-    .copy2container{
-      margin-top: 83px;
-      width: 312px;
-    }
-    .copy2subcopy1 {
-      width: 312px;
-      font-size: 30px;
-    }
-    .copy2subcopy2 {
-      margin-top: -30px;
-      width: 312px;
-      font-size: 16px;
-    }
-    .carousel .img:first-child{
-      left: -120px;
-    }
-    .carousel .img:last-child{
-      left: 120px;
-    }
-  }
-
-  @media (max-width: 1300px) {
-    .carousel .img:first-child{
-      left: -150px;
-    }
-    .carousel .img:last-child{
-      left: 150px;
     }
   }
     

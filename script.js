@@ -24,6 +24,8 @@ $(document).ready(function(){
         SBcurrentIndex = (SBcurrentIndex + 1) % totalSlides;
         SBshowSlide(SBcurrentIndex);
         showSlide(currentIndex);
+        $('.slider-button-container').find('.border-top').removeClass('rotateBorder').hide().show(0); // Restart border animation
+        $('.slider-button-container').find('.border-bottom').removeClass('rotateBorder-bottom').hide().show(0); // Restart border animation
       }, 5000); // Change slide every 5 seconds
     }
   
@@ -46,15 +48,17 @@ $(document).ready(function(){
       $('.slider-button-container').find('.border-bottom').removeClass('rotateBorder-bottom').hide().show(0); // Restart border animation
     });
   });
-  // navigation bar and side bar
+
   function showSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'flex';
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
   }
   function hideSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
   }
-  // card slider
+
+  
+
 
   
